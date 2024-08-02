@@ -1,33 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
     <title>SIMPLE COMPANY PROFILE</title>
-</head>
-<style>
-   *{margin: 0%;
-padding: 0%;}
-   
-   
-   .hero{width: 100%;
-    height: 600px;
-    background-color: bisque;}
-    .area-logo{width: 50%;
-    height: 100px;
-display: flex;
-justify-content: center;}
-    .navbar{width: 100%;
-    height: 100px;
-    background-color: blueviolet;}
-</style>
-<body>
-    <section class="hero" id="hero">
-        <div class="navbar">
-            <div class="area-logo"></div>
-        </div>
-        <div class="content"></div>
+  </head>
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+    }
 
+    .hero {
+      width: 100%;
+      height: 600px;
+      background-color: rgb(158, 135, 109);
+    }
+    .area-logo {
+      width: 50%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+    }
+    .navbar {
+      width: 100%;
+      height: 100px;
+    
+      display: flex;
+      align-items: center;
+    }
+    .nav-item {
+      border-left-style: none;
+      padding-left: 20px;
+      display: flex;
+    }
+    .nav-item ul li{
+      display: inline;
+    }
+    .nav-item ul li a{
+color: coral;
+text-decoration: solid;
+
+    }
+    .text-tittle{
+        width: 100%;
+        height: 250px;
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .button-area{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        
+    }
+    .button-area{
+        margin: 20px;
+    }
+    .btn-download{
+        background-color: beige;
+        padding: 20px;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+    .btn-explore{
+    border: burlywood solid 1px;
+        padding: 20px;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+  </style>
+  <body>
+    <section class="hero" id="hero">
+      <div class="navbar">
+       
+
+        <div class="area-logo">My project</div>
+       <div class="nav-item">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portofolio</a></li>
+          </ul>
+       </div>
+      </div>
+      <div class="content">
+        <div class="text-tittle">
+<h1>Hi im me</h1>
+<p>Welcome to my Portofolio</p>
+        </div>
+        <div class="button-area">
+<a class="btn-download" href="">Download</a>
+<a class="btn-explore" href="">Details</a>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
