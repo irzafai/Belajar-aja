@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'montserrat';
+scroll-behavior: smooth;
+}
+body{
+background-color: #fff9a8;
+}
+.nav{
+    position: fixed;
+    background-color: #fff9a8;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+    margin-left: 5px;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #f19800;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav ul li a:hover,
+.nav ul li a:active {
+background-color: #f19800;
+color: white;
+border-radius: 10px;
+}
+.hero{
+height: 100vh;
+position: relative;
+overflow: hidden;
+}
+.hero img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#landing{
+    height: 100vh;
+}
+#landing h1 {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 0;
+    left: 200px;
+    font-size: 120px;
+    color: white;
+    text-align: center;
+}
+.btn{
+position: absolute;
+top: 80%;
+z-index: 9;
+margin: 0 auto;
+left: 50%;
+transform: translate(-50%,-50%);
+text-decoration: none;
+padding: 12px 20px;
+border-radius: 10px;
+background-color: #f19800;
+color: white;
+font-size: 25px;
+box-shadow: 5px 0 15px rgb(85,85,0.8);
+}
+#landing::before{
+content: "";
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 100px;
+background: linear-gradient(to top,#f19800,transparant);
+
+}
+#about{
+    padding: 70px 0;
+    line-height: 25px;
+    color: #fff;
+    background-color: #f19800;
+}
+.content{
+    z-index: 5;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.content hr{
+    width: 30%;
+    border: 1px solid #fff;
+    text-align: center;
+    display: inline-block;
+}
+.content p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+
+
+</style>
+
+
+
+<body>
+    <section id="landing">
+<div class="nav">
+<ul><li><a href="#">HOME</a></li>
+<li><a href="index.html">ABOUT</a></li>
+<li><a href="#">CONTACT</a></li>
+<li><a href="Buat baru.html">PORTOFOLIO</a></li></ul>
+
+</div>
+<div class="hero">
+<img src="Backround akhir.png" alt="" class="last-img">
+</div>
+<a href="#" class="btn">Let's Travel</a>
+    </section>
+    <section id="about">
+<div class="content">
+<h1>ABOUT</h1>
+<hr>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptates provident maiores sequi quia ullam. Delectus quam quis commodi inventore excepturi maxime mollitia saepe ipsa minus aperiam assumenda a quibusdam, laudantium cumque doloremque eaque! In corrupti laborum, assumenda nisi, quod quaerat aliquam illo mollitia iusto quidem possimus eaque. Tenetur aperiam accusantium odit doloribus minima quibusdam temporibus nemo atque debitis optio adipisci accusamus sit aut modi enim officiis, voluptatibus rem quod non molestias quia vel nihil quasi? Vero earum nobis perspiciatis autem illo vitae at ea aliquid quod sed dolores excepturi alias eos repellendus laudantium, hic aperiam sit ut corrupti similique?</p>
+</div>
+    </section>
+<script src="script.js"></script>
+<!--Comment-->
+
+</body>
+</html>
