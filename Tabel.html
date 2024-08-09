@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel HTML</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        background: wheat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .table {
+        width: 80%;
+        text-align: center;
+        background-color: antiquewhite;
+    }
+
+
+    .table,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 10px;
+        border-collapse: collapse;
+    }
+    tbody tr:nth-child(even){
+        background: cyan;
+}
+tbody tr:hover{
+    background-color: blue;
+    color: white; 
+}
+
+    .btn-materi {
+        text-decoration: none;
+        background-color: blue;
+        border-radius: 5px;
+        color: white;
+        padding: 6px;
+    }
+    .btn-materi:hover{
+        background-color: pink;
+        color: black;
+    }
+    
+</style>
+
+<body>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <th> No</th>
+                <th>Senin</th>
+                <th>Selasa</th>
+                <th>Rabu</th>
+                <th>Materi video</th>
+                <th>Jam</th>
+            </thead>
+            
+
+            <tbody>
+                <tr>
+
+                    <td>1</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td><a href="https://www.instagram.com/irzfai/" class="btn-materi">Instagram</a></td>
+                    <td>2 jp</td>
+
+                </tr>
+                <tr>
+
+                    <td>1</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td><a href="https://youtu.be/mcnXfOUav88?si=SX8kJNbg6pO4LQLK" class="btn-materi">Youtube</a></td>
+                    <td>2 jp</td>
+
+                </tr>
+                <tr>
+
+                    <td>1</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td><a href="https://youtu.be/mcnXfOUav88?si=SX8kJNbg6pO4LQLK" class="btn-materi">...</a></td>
+                    <td>2 jp</td>
+
+                </tr>
+                <tr>
+
+                    <td>1</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td><a href="https://youtu.be/mcnXfOUav88?si=SX8kJNbg6pO4LQLK" class="btn-materi">...</a></td>
+                    <td>2 jp</td>
+
+                </tr>
+                <tr>
+
+                    <td>1</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td>Matematika</td>
+                    <td><a href="https://youtu.be/mcnXfOUav88?si=SX8kJNbg6pO4LQLK" class="btn-materi">...</a></td>
+                    <td>2 jp</td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Jumlah jam pelajaran</td>
+                    <td>10 JP</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+
+    </div>
+</body>
+
+</html>
