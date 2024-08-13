@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #82fda7, #0088cc);
+            background-size: 300%;
+            animation: gradient 10s infinite alternate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 50%;
+            height: 60%;
+            background: #fff;
+        }
+
+        /* animasi gradient */
+        @keyframes gradient {
+            0% {
+                background-position: center;
+            }
+
+            25% {
+                background-position: right;
+                background-size: 100%;
+            }
+
+            50% {
+                background-position: left;
+                background-size: 350%;
+            }
+
+            75% {
+                background-position: bottom-right;
+                background-size: 200%;
+            }
+
+            100% {
+                background-position: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>Login Form</legend>
+            <!-- Login Form -->
+            <form action="#" method="post">
+                <div class="from-group">
+                    <Label>Nama lengkap</Label>
+                    <input required type="text">
+                </div> <div class="from-group">
+                    <Label>Username</Label>
+                    <input required type="text">
+                </div> <div class="from-group">
+                    <Label>Email</Label>
+                    <input required type="text">
+                </div> <div class="from-group">
+                    <Label>Password</Label>
+                    <input required type="text">
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
