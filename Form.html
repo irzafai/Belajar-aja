@@ -9,6 +9,7 @@
         * {
             padding: 0;
             margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
@@ -25,7 +26,29 @@
         .container {
             width: 50%;
             height: 60%;
-            background: #fff;
+            /* background: #fff; */
+            border-radius: 30px;
+        }
+
+        fieldset {
+            background-color: #f0ffff;
+        }
+
+        legend {
+            background-color: #0be84d;
+            padding: 16px 48px;
+            border-radius: 100px;
+            color: white;
+            margin-left: 50px;
+            margin-bottom: 40px;
+        }
+
+        .form-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
         /* animasi gradient */
@@ -65,13 +88,16 @@
                 <div class="from-group">
                     <Label>Nama lengkap</Label>
                     <input required type="text">
-                </div> <div class="from-group">
+                </div>
+                <div class="from-group">
                     <Label>Username</Label>
                     <input required type="text">
-                </div> <div class="from-group">
+                </div>
+                <div class="from-group">
                     <Label>Email</Label>
                     <input required type="text">
-                </div> <div class="from-group">
+                </div>
+                <div class="from-group">
                     <Label>Password</Label>
                     <input required type="text">
                 </div>
