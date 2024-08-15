@@ -25,20 +25,24 @@
 
         .container {
             width: 50%;
-            height: 60%;
+
             /* background: #fff; */
-            border-radius: 30px;
+
         }
 
         fieldset {
             background-color: #f0ffff;
+            border: none;
+            border-radius: 16px;
+            padding: 16px;
         }
 
         legend {
-            background-color: #0be84d;
+            background-color: #07f34e ;
+            background-color: ;
             padding: 16px 48px;
-            border-radius: 100px;
-            color: white;
+            border-radius: 16px;
+            color: black;
             margin-left: 50px;
             margin-bottom: 40px;
         }
@@ -47,8 +51,25 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            padding: 10px;
+            padding: 8px 24px;
             box-sizing: border-box;
+        }
+
+        input,
+        label,
+        button {
+            padding: 10px;
+        }
+        .btn-login{
+            background-color: #07f34e;
+            border: none;
+            border-radius: 16px;
+            padding: 16px;
+            margin-top: 16px;
+        }
+        .btn-login:hover{
+            background-color: #82fda7 ;
+            cursor: pointer;
         }
 
         /* animasi gradient */
@@ -100,6 +121,9 @@
                 <div class="from-group">
                     <Label>Password</Label>
                     <input required type="text">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-login">Login</button>
                 </div>
             </form>
         </fieldset>
