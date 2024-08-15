@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Request Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            background: url('Purple moun.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background-color: transparent; 
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px); 
+        }
+
+        fieldset {
+            border: none; 
+            padding: 0; 
+            margin: 0; 
+            text-align: center; 
+        }
+
+        legend {
+            padding: 16px;
+            border-radius: 8px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1); 
+            border-radius: 4px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .btn-question,
+        .btn-need {
+            margin-bottom: 5px;
+        }
+
+        .btn-question label,
+        .btn-need label {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn-login {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            background-color: #fff;
+            color: black;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+
+       
+        
+        .form-group.submit-button {
+            display: flex; 
+            justify-content: center; 
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>
+                <h1>Software Request</h1>
+            </legend>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="employee-id">Employee ID</label>
+                    <input id="employee-id" name="employee-id" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile No / Extn.No</label>
+                    <input id="mobile" name="mobile" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Which software do you require?</label>
+                    <div class="btn-question">
+                        <label><input type="checkbox" name="software" value="Software A"> Software A</label>
+                    </div>
+                    <div class="btn-question">
+                        <label><input type="checkbox" name="software" value="Software B"> Software B</label>
+                    </div>
+                    <div class="btn-question">
+                        <label><input type="checkbox" name="software" value="Software C"> Software C</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>How urgently do you need it?</label>
+                    <div class="btn-need">
+                        <label><input type="radio" name="urgency" value="As soon as possible"> As soon as possible</label>
+                    </div>
+                    <div class="btn-need">
+                        <label><input type="radio" name="urgency" value="Within 2 to 3 weeks"> Within 2 to 3 weeks</label>
+                    </div>
+                    <div class="btn-need">
+                        <label><input type="radio" name="urgency" value="I'm in no hurry"> I'm in no hurry</label>
+                    </div>
+                </div>
+                <div class="form-group submit-button">
+                    <button type="submit" class="btn-login">Request</button>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+
+</html>
